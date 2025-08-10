@@ -9,7 +9,7 @@ function App() {
         <button
           onClick={() =>
             triggerNotification({
-              type: "warning",
+              type: "success",
               message: "This is a success notification!",
               onClose: () => {
                 console.log("onclose trigger");
@@ -21,19 +21,50 @@ function App() {
         >
           Show Success (Top Right)
         </button>
-
         <button
           onClick={() =>
             triggerNotification({
               type: "error",
-              message: "This is an error notification!",
+              message: "This is a success notification!",
+              onClose: () => {
+                console.log("onclose trigger");
+              },
               // autoClose: 3000,
               position: "top-left",
             })
           }
-          style={{ marginLeft: "1rem" }}
         >
           Show Error (Top Left)
+        </button>
+        <button
+          onClick={() =>
+            triggerNotification({
+              type: "warning",
+              message: "This is a success notification!",
+              onClose: () => {
+                console.log("onclose trigger");
+              },
+              // autoClose: 3000,
+              position: "bottom-left",
+            })
+          }
+        >
+          Show Warning (Bottom Left)
+        </button>
+        <button
+          onClick={() =>
+            triggerNotification({
+              type: "info",
+              message: "This is a success notification!",
+              onClose: () => {
+                console.log("onclose trigger");
+              },
+              // autoClose: 3000,
+              position: "bottom-right",
+            })
+          }
+        >
+          Show Info (Bottom Right)
         </button>
       </div>
     </>

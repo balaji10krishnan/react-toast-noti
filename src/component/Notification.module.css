@@ -1,18 +1,21 @@
-@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
-/* src/component/Notification.module.css */
-
+@font-face {
+  font-family: "Poppins";
+  src: url("../assets/fonts/Poppins-Regular.ttf");
+}
 .noti-container {
+  font-family: "Poppins";
   display: flex;
   align-items: center;
-  padding: 12px 16px;
+  padding: 12px 20px;
   margin-bottom: 10px;
   border-radius: 6px;
-  color: white;
   min-width: 250px;
   max-width: 400px;
-  font-size: 14px;
+  font-size: 16px;
+  font-weight: 400;
   animation: slideIn 0.3s ease;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border-width: 1px;
+  border-style: solid;
 }
 
 .noti-icon {
@@ -33,16 +36,24 @@
 
 /* Type styles */
 .success {
-  background-color: #28a745;
+  color: #155724;
+  background-color: #d4edda;
+  border-color: #c3e6cb;
 }
 .info {
-  background-color: #17a2b8;
+  color: #004085;
+  background-color: #cce5ff;
+  border-color: #b8daff;
 }
 .warning {
-  background-color: #ffc107;
+  color: #856404;
+  background-color: #fff3cd;
+  border-color: #ffeeba;
 }
 .error {
-  background-color: #dc3545;
+  color: #721c24;
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
 }
 
 /* Animation */
