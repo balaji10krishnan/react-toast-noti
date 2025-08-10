@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+.noti-container {
+  padding: 8px 16px;
+  color: white;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  margin: 12px;
+  font-family: "Poppins", sans-serif;
+  position: fixed;
+  z-index: 9999;
+}
+.noti-close {
+  margin-left: 8px;
+  cursor: pointer;
+}
+.noti-icon {
+  margin-right: 14px;
+}
+.success {
+  background-color: #22c55e; /* green */
+}
+
+.info {
+  background-color: #3b82f6; /* blue */
+}
+
+.warning {
+  background-color: #facc15; /* yellow */
+}
+
+.error {
+  background-color: #ef4444; /* red */
+}
+
+.top-left {
+  top: 24px;
+  left: 24px;
+}
+
+.top-right {
+  top: 24px;
+  right: 24px;
+}
+
+.bottom-left {
+  bottom: 24px;
+  left: 24px;
+}
+
+.bottom-right {
+  bottom: 24px;
+  right: 24px;
+}
