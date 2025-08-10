@@ -9,7 +9,7 @@ function App() {
         <button
           onClick={() =>
             triggerNotification({
-              type: "success",
+              type: "warning",
               message: "This is a success notification!",
               onClose: () => {
                 console.log("onclose trigger");
